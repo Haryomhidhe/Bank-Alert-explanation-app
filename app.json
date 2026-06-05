@@ -1,0 +1,72 @@
+[
+  {
+  "name" : "Electronic Funds Transfer ",
+  "keywords" : ["NIP", "Transfer", "NXP"],
+  "Amount" : "#10 below 5,000 | #25 for 5,001-50,000 | #50 above #50,000",
+  "explanation":"Fee charged when sending money to any bank electronically ",
+  "suspicous" : "false"
+},
+{
+  "name" : "USSD Charges",
+  "keywords" : ["NIP", "Transfer", "NXP"],
+  "Amount" : "#10 below 5,000 | #25 for 5,001-50,000 | #50 above #50,000",
+  "explanation":"USSD Charges for using Ussd codes like *737#, *996# e.t.c",
+  "suspicous" : "false"
+},
+{
+  "name" : "ATM withdrawal from another bank",
+  "keywords" : ["NIP", "Transfer", "NXP"],
+  "Amount" : "Free for the first 3 months, #35 after that",
+  "explanation" :"ATM withdrawal from another bank",
+  "suspicous" : "false"
+},
+{
+  "name" : "ATM withdrawal from the same bank",
+  "keywords" : ["NIP", "Transfer", "NXP"],
+  "Amount" : "Free ",
+  "explanation" :"ATM withdrawal from your own bank",
+  "suspicous" : "false"
+},
+{
+  "name" : "Card issuance/renewal/replacement fee",
+  "keywords" : ["NIP", "Transfer", "NXP"],
+  "Amount" : "#1000 ",
+  "explanation" :" when your debit/credit card is first issued to you | when your debit/credit card is renewed | when your card gets replaced after it being damaged or lost",
+  "suspicous" : "false"
+},
+{
+  "name" : "Card maintanance fee (saving account)",
+  "keywords" : ["NIP", "Transfer", "NXP"],
+  "Amount" : "#50",
+  "explanation" :"Money for maintaining and keeping your card active ",
+  "suspicous" : "false"
+},
+{
+  "name" : "Current Account Maintenance Fee (CAMF)",
+  "keywords" : ["NIP", "Transfer", "NXP"],
+  "Amount" : "#1 PER #1,000",
+  "explanation" :"Monthly Charge on current accounts only, Not savings ",
+  "suspicous" : "false"
+},
+{
+  "name" : "SMS alert Fee ",
+  "keywords" : ["NIP", "Transfer", "NXP"],
+  "Amount" : "Free",
+  "explanation" :"cost recovery on transactions you initiate | Free for bank intiated transactions ",
+  "suspicous" : "false"
+},
+{
+  "name" : "Stamp Duty",
+  "keywords" : ["NIP", "Transfer", "NXP"],
+  "Amount" : "#50",
+  "explanation" :"Government tax on transfer above #10,000 | #50 flat per transaction",
+  "suspicous" : "false"
+},
+{
+  "name" : "Cashless policy charge (individual)",
+  "keywords" : ["NIP", "Transfer", "NXP"],
+  "Amount" : "#50",
+  "explanation" :"2% on cash deposit above #500,000 | 3% on cash withdrawals above #500,000",
+  "suspicous" : "false"
+}
+]
