@@ -1,72 +1,79 @@
 [
   {
-  "name" : "Electronic Funds Transfer ",
-  "keywords" : ["NIP", "Transfer", "NXP"],
-  "Amount" : "#10 below 5,000 | #25 for 5,001-50,000 | #50 above #50,000",
-  "explanation":"Fee charged when sending money to any bank electronically ",
-  "suspicous" : "false"
-},
-{
-  "name" : "USSD Charges",
-  "keywords" : ["NIP", "Transfer", "NXP"],
-  "Amount" : "#10 below 5,000 | #25 for 5,001-50,000 | #50 above #50,000",
-  "explanation":"USSD Charges for using Ussd codes like *737#, *996# e.t.c",
-  "suspicous" : "false"
-},
-{
-  "name" : "ATM withdrawal from another bank",
-  "keywords" : ["NIP", "Transfer", "NXP"],
-  "Amount" : "Free for the first 3 months, #35 after that",
-  "explanation" :"ATM withdrawal from another bank",
-  "suspicous" : "false"
-},
-{
-  "name" : "ATM withdrawal from the same bank",
-  "keywords" : ["NIP", "Transfer", "NXP"],
-  "Amount" : "Free ",
-  "explanation" :"ATM withdrawal from your own bank",
-  "suspicous" : "false"
-},
-{
-  "name" : "Card issuance/renewal/replacement fee",
-  "keywords" : ["NIP", "Transfer", "NXP"],
-  "Amount" : "#1000 ",
-  "explanation" :" when your debit/credit card is first issued to you | when your debit/credit card is renewed | when your card gets replaced after it being damaged or lost",
-  "suspicous" : "false"
-},
-{
-  "name" : "Card maintanance fee (saving account)",
-  "keywords" : ["NIP", "Transfer", "NXP"],
-  "Amount" : "#50",
-  "explanation" :"Money for maintaining and keeping your card active ",
-  "suspicous" : "false"
-},
-{
-  "name" : "Current Account Maintenance Fee (CAMF)",
-  "keywords" : ["NIP", "Transfer", "NXP"],
-  "Amount" : "#1 PER #1,000",
-  "explanation" :"Monthly Charge on current accounts only, Not savings ",
-  "suspicous" : "false"
-},
-{
-  "name" : "SMS alert Fee ",
-  "keywords" : ["NIP", "Transfer", "NXP"],
-  "Amount" : "Free",
-  "explanation" :"cost recovery on transactions you initiate | Free for bank intiated transactions ",
-  "suspicous" : "false"
-},
-{
-  "name" : "Stamp Duty",
-  "keywords" : ["NIP", "Transfer", "NXP"],
-  "Amount" : "#50",
-  "explanation" :"Government tax on transfer above #10,000 | #50 flat per transaction",
-  "suspicous" : "false"
-},
-{
-  "name" : "Cashless policy charge (individual)",
-  "keywords" : ["NIP", "Transfer", "NXP"],
-  "Amount" : "#50",
-  "explanation" :"2% on cash deposit above #500,000 | 3% on cash withdrawals above #500,000",
-  "suspicous" : "false"
-}
+    "name": "Electronic Funds Transfer (NIP)",
+    "keywords": ["transfer fee", "NIP", "EFT", "electronic transfer"],
+    "amount": "₦10 below ₦5,000 | ₦25 for ₦5,001-₦50,000 | ₦50 above ₦50,000",
+    "explanation": "A transaction fee charged by your bank when you transfer money electronically to another person's bank account. The amount depends on how much money you're sending.",
+    "suspicious": false
+  },
+  {
+    "name": "USSD Charges",
+    "keywords": ["USSD", "*737", "*901", "*966", "*919"],
+    "amount": "Varies - same as NIP transfer charges currently apply",
+    "explanation": "Fees charged when you use USSD codes (like *737#, *901#, etc.) to access banking services on your phone without internet.",
+    "suspicious": false
+  },
+  {
+    "name": "ATM withdrawal from another bank",
+    "keywords": ["ATM withdrawal", "remote-on-us", "POS withdrawal"],
+    "amount": "Free for first 3 withdrawals monthly, ₦35-100 after that",
+    "explanation": "A fee charged when you withdraw cash from an ATM that doesn't belong to your bank. You get free withdrawals from other banks per month (usually 3), then charges apply after that.",
+    "suspicious": false
+  },
+  {
+    "name": "ATM withdrawal from your own bank",
+    "keywords": ["on-us", "ATM withdrawal own bank"],
+    "amount": "Free",
+    "explanation": "No fee charged when you withdraw cash from your own bank's ATM. This is always completely free.",
+    "suspicious": false
+  },
+  {
+    "name": "Card issuance/renewal/replacement fee",
+    "keywords": ["card issuance", "card renewal", "card replacement", "card fee"],
+    "amount": "₦1,000",
+    "explanation": "A one-time fee charged when your debit or credit card is first issued, renewed after expiration, or replaced due to damage or loss.",
+    "suspicious": false
+  },
+  {
+    "name": "Card maintenance fee (savings account)",
+    "keywords": ["card maintenance"],
+    "amount": "Maximum ₦50 quarterly",
+    "explanation": "A quarterly fee charged to keep your savings account card active. Cards linked to current accounts are not charged this fee.",
+    "suspicious": false
+  },
+  {
+    "name": "Current Account Maintenance Fee (CAMF)",
+    "keywords": ["CAMF", "account maintenance", "maintenance fee"],
+    "amount": "Maximum ₦1 per ₦1,000 transacted",
+    "explanation": "A fee charged only on current accounts based on customer-initiated debit transactions. Not applicable to savings accounts.",
+    "suspicious": false
+  },
+  {
+    "name": "SMS Alert Fee",
+    "keywords": ["SMS alert", "SMS charge", "SMS fee", "transaction alert"],
+    "amount": "₦6 per SMS (as of May 2025)",
+    "explanation": "A mandatory charge for transaction SMS notifications, regulated by NCC and CBN. Recently increased from ₦4 to ₦6 per alert.",
+    "suspicious": false
+  },
+  {
+    "name": "Stamp Duty / EMTL",
+    "keywords": ["stamp duty", "EMTL", "money transfer levy", "duty"],
+    "amount": "₦50 flat",
+    "explanation": "A government tax charged on electronic transfers of ₦10,000 and above, borne by the sender. Mandatory under the Tax Act effective January 2026.",
+    "suspicious": false
+  },
+  {
+    "name": "VAT (Value Added Tax)",
+    "keywords": ["VAT", "value added tax"],
+    "amount": "7.5% of applicable service charge",
+    "explanation": "A tax applied on top of certain bank service charges, such as card fees and SMS alerts, where those charges are classified as taxable banking services.",
+    "suspicious": false
+  },
+  {
+    "name": "Cashless Policy Charge",
+    "keywords": ["cashless", "cash deposit charge", "cash withdrawal charge"],
+    "amount": "2% on deposits above ₦500,000, 3% on withdrawals above ₦500,000",
+    "explanation": "Charges applied under Nigeria's cashless policy for large cash transactions, designed to encourage digital banking.",
+    "suspicious": false
+  }
 ]
